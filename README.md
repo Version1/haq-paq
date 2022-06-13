@@ -42,3 +42,8 @@ Includes extra utility functions such as efficiently counting a sym file's lengt
 * Carlos Sanchez
 * Brooke Hopley
 * Thomas Smyth
+
+## Unit Tests
+These libraries have been unit tested with the unit tests stored in a private repository.
+
+
