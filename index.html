@@ -1,0 +1,2427 @@
+<html lang="en"><!-- q-doc Code Documentation Generator --><!--  Dynamic HTML Home Page --><!-- Copyright (C) 2014 - 2018 Jaskirat Rajasansir --><!-- License BSD, see LICENSE for details --><head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>q-doc Generated Documentation</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<link href="css/q-doc.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/string.js/1.9.1/string.min.js"></script>
+<script src="js/q-doc.js"></script>
+</head>
+<body role="document">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<a class="navbar-brand" id="q-doc-header-company">Version1</a>
+<a class="navbar-brand" id="q-doc-header-app-name">Haq-Paq</a>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right" id="menu">
+<li><a href="#0">benchmark</a></li><li><a href="#1">chrono</a></li><li><a href="#2">format</a></li><li><a href="#3">log</a></li><li><a href="#4">maths</a></li><li><a href="#5">misc</a></li><li><a href="#6">table</a></li></ul>
+</div>
+</div>
+</nav>
+<div class="container" id="main"><div class="row"> <div class="section-title" id="0"><h2>benchmark</h2></div><div class="col-md-9 col-lg-9" id="q-doc-parsed-content0">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_bench_logBench"><tt>.bench.logBench[func;args]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Log the stats of a function's runtime</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>func</tt> : <em>Symbol</em>
+<ul>
+<li>Function name</li>
+</ul>
+</li>
+<li>
+<tt>args</tt> : <em>Any list type</em>
+<ul>
+<li>Function input(s) as a list</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_bench_BenchRunTime"><tt>.bench.BenchRunTime[...]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Table for tracking function runtimes</p>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_bench_BenchEachStep"><tt>.bench.BenchEachStep[...]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Table for tracking each line's runtime in a function</p>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_bench_logStep"><tt>.bench.logStep[func;sect]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Basic upsert which records the time when a section of a function was executed</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>func</tt> : <em>Symbol</em>
+<ul>
+<li>Function name</li>
+</ul>
+</li>
+<li>
+<tt>sect</tt> : <em>Symbol</em>
+<ul>
+<li>Section of function (some symbol name identifier to identify function section)</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_bench_returnTimeStep"><tt>.bench.returnTimeStep[func]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>func</tt> : <em>Symbol</em>
+<ul>
+<li>Function name</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Table containing time taken to execute section</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_bench_BenchEachStep"><tt>.bench.BenchEachStep</tt></a>
+</li>
+</ul>
+</div>
+</div>
+</div></div><div class="row"> <div class="section-title" id="1"><h2>chrono</h2></div><div class="col-md-9 col-lg-9" id="q-doc-parsed-content1">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_getMonthStart"><tt>.chrono.getMonthStart[date]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the date at the start of the month</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>date</tt> : <em>Date</em>
+<ul>
+<li>Any date</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Date</em>
+<ul>
+<li>First day of given month</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_getMonthEnd"><tt>.chrono.getMonthEnd[date]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the date at the end of the month</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>date</tt> : <em>Date</em>
+<ul>
+<li>Any date</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Date</em>
+<ul>
+<li>Last day of given month</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_getWeekStart"><tt>.chrono.getWeekStart[date]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the date at the start of the week</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>date</tt> : <em>Date</em>
+<ul>
+<li>Any date</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Date</em>
+<ul>
+<li>First day of given week</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_getWeekEnd"><tt>.chrono.getWeekEnd[date]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the date at the end of the week</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>date</tt> : <em>Date</em>
+<ul>
+<li>Any date</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Date</em>
+<ul>
+<li>Last day of given week</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_getYearStart"><tt>.chrono.getYearStart[date]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the date at the start of the year</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>date</tt> : <em>Date</em>
+<ul>
+<li>Any date</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Date</em>
+<ul>
+<li>First date of given year</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_getYearEnd"><tt>.chrono.getYearEnd[date]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the date at the end of the year</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>date</tt> : <em>Date</em>
+<ul>
+<li>Any date</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Date</em>
+<ul>
+<li>Last date of given year</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_getPrevWeekday"><tt>.chrono.getPrevWeekday[date]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return most recent weekday</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>date</tt> : <em>Date</em>
+<ul>
+<li>Any date</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Date</em>
+<ul>
+<li>Most recent weekday</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_getWeekDays"><tt>.chrono.getWeekDays[date;num]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return a list of previous non Saturday/Sunday dates from given date</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>date</tt> : <em>Date</em>
+<ul>
+<li>Return previous weekdays as of this date</li>
+</ul>
+</li>
+<li>
+<tt>num</tt> : <em>32-bit Integer,64-bit Integer</em>
+<ul>
+<li>Number of dates to return</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Date list</em>
+<ul>
+<li>List of weekdays</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_unixToQ"><tt>.chrono.unixToQ[seconds]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Convert second-based Unix timestamp to kdb timestamp</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>seconds</tt> : <em>64-bit Integer</em>
+<ul>
+<li>Second-based Unix timestamp</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Timestamp</em>
+<ul>
+<li>Kdb timestamp</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_qToUnix"><tt>.chrono.qToUnix[timestamp]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Convert kdb timestamp to second-based Unix timestamp (equivalent to date +%s)</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>timestamp</tt> : <em>Timestamp</em>
+<ul>
+<li>kdb timestamp</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>64-bit Integer</em>
+<ul>
+<li>Second based unix timestamp</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_unixToQMS"><tt>.chrono.unixToQMS[milliseconds]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Convert millisecond-based Unix timestamp to kdb timestamp</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>milliseconds</tt> : <em>64-bit Integer</em>
+<ul>
+<li>Millisecond-based Unix timestamp</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Timestamp</em>
+<ul>
+<li>Kdb timestamp</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_qToUnixMS"><tt>.chrono.qToUnixMS[timestamp]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Convert kdb timestamp to millisecond-based Unix timestamp (equivalent to date +%s%3N)</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>timestamp</tt> : <em>Timestamp</em>
+<ul>
+<li>kdb timestamp</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>64-bit Integer</em>
+<ul>
+<li>Millisecond based unix timestamp</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_chrono_formatDate"><tt>.chrono.formatDate[format;date;delim]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Modify date format. Example: <code>.chrono.formatDate[`d`m`y;.z.d;"-"]</code></p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>format</tt> : <em>Symbol list</em>
+<ul>
+<li>Date format to return, accepts <code>`d`m`y`y2</code></li>
+</ul>
+</li>
+<li>
+<tt>date</tt> : <em>Date</em>
+<ul>
+<li>Any date</li>
+</ul>
+</li>
+<li>
+<tt>delim</tt> : <em>Character,String</em>
+<ul>
+<li>Delimiter</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div></div><div class="row"> <div class="section-title" id="2"><h2>format</h2></div><div class="col-md-9 col-lg-9" id="q-doc-parsed-content2">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_format_formatNum"><tt>.format.formatNum[decplaces;num]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Format a number with k/M to denote thousand/million. Example: <code>.format.formatNum[0;1213000]</code></p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>decplaces</tt> : <em>32-bit Integer,64-bit Integer</em>
+<ul>
+<li>Number of decimal places</li>
+</ul>
+</li>
+<li>
+<tt>num</tt> : <em>16-bit Integer,32-bit Integer,64-bit Integer,Double precision floating point</em>
+<ul>
+<li>Number to format</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>String</em>
+<ul>
+<li>Formatted number string</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_format_commaSepNum"><tt>.format.commaSepNum[num;incDec]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Format a number with commas</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>num</tt> : <em>32-bit Integer,64-bit Integer</em>
+<ul>
+<li>Number to format</li>
+</ul>
+</li>
+<li>
+<tt>incDec</tt> : <em>Boolean</em>
+<ul>
+<li>whether to include the decimal values</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>String</em>
+<ul>
+<li>Formatted number string</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_format_customSSR"><tt>.format.customSSR[msg;dict]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Substitute values into a string, mapping using input dictionary</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>msg</tt> : <em>String</em>
+<ul>
+<li>String including tokens (<code>$key1, $key2,...</code>) that are keys of   <code>dict</code>. Example:  <code>msg:"The count is $cnt, the overall value is $val and the user is $u"</code></li>
+</ul>
+</li>
+<li>
+<tt>dict</tt> : <em>Dictionary</em>
+<ul>
+<li>Dictionary mapping tokens to the atomic values to replace them with. Example:<code>dict:`cnt`val`u!(10;1500f;`chris)</code></li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>String</em>
+<ul>
+<li>Formatted string</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_format_customSSRByOrder"><tt>.format.customSSRByOrder[msg;list]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Substitute values into a string, mapping using the order of input list</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>msg</tt> : <em>String</em>
+<ul>
+<li>String including token (<code>$0, $1,...</code>) values to be replaced. Example:  <code>"The count is $0, the overall value is $1 and the user is $2"</code></li>
+</ul>
+</li>
+<li>
+<tt>list</tt> : <em>Any list type</em>
+<ul>
+<li>Atomic values to replace tokens with. Example:<code>list:(10;1500f;`chris)</code></li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>String</em>
+<ul>
+<li>Formatted string</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div></div><div class="row"> <div class="section-title" id="3"><h2>log</h2></div><div class="col-md-9 col-lg-9" id="q-doc-parsed-content3">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_log_getMemStats"><tt>.log.getMemStats[]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Format memstats to write to log</p>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>String</em>
+<ul>
+<li>Pipe separated memory stats</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_log_Error"><tt>.log.Error[...]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Table storing error messages</p>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_log_publishInfo"><tt>.log.publishInfo[msg]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Publish log message and memstats to stdout</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>msg</tt> : <em>String</em>
+<ul>
+<li>Log message</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_log_getMemStats"><tt>.log.getMemStats</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_log_publishError"><tt>.log.publishError[msg]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Publish error message and memstats to stderr</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>msg</tt> : <em>String</em>
+<ul>
+<li>Log message</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_log_getMemStats"><tt>.log.getMemStats</tt></a>
+</li>
+</ul>
+</div>
+</div>
+</div></div><div class="row"> <div class="section-title" id="4"><h2>maths</h2></div><div class="col-md-9 col-lg-9" id="q-doc-parsed-content4">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_avgCntForXDays"><tt>.maths.avgCntForXDays[datecol;num]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Get an num-day average count for a table with x distinct dates in it (x&gt;=num)</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>datecol</tt> : <em>Date list</em>
+<ul>
+<li>date column</li>
+</ul>
+</li>
+<li>
+<tt>num</tt> : <em>64-bit Integer</em>
+<ul>
+<li>number of days before today to consider</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Double precision floating point list</em>
+<ul>
+<li>Average number of entries per date where records for date exist</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_gcd"><tt>.maths.gcd[num1;num2]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Greatest common divisor of 2 integers</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>num1</tt> : <em>64-bit Integer</em>
+<ul>
+<li>number</li>
+</ul>
+</li>
+<li>
+<tt>num2</tt> : <em>64-bit Integer</em>
+<ul>
+<li>number</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>64-bit Integer</em>
+<ul>
+<li>Greatest common divisor</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_lcm"><tt>.maths.lcm[num1;num2]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Lowest common multiple of 2 integers</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>num1</tt> : <em>64-bit Integer</em>
+<ul>
+<li>number</li>
+</ul>
+</li>
+<li>
+<tt>num2</tt> : <em>64-bit Integer</em>
+<ul>
+<li>number</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>64-bit Integer</em>
+<ul>
+<li>Lowest common multiple</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_maths_gcd"><tt>.maths.gcd</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_round"><tt>.maths.round[decplaces;num]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Round num to decplaces decimal place</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>decplaces</tt> : <em>64-bit Integer</em>
+<ul>
+<li>number of decimal places to round to</li>
+</ul>
+</li>
+<li>
+<tt>num</tt> : <em>Double precision floating point</em>
+<ul>
+<li>number to round</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Double precision floating point</em>
+<ul>
+<li>Rounded number</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_linspace"><tt>.maths.linspace[start;stop;num]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Replicate Python functionality for linspace <br/> Return num evenly spaces samples, calculated over the interval [start,stop] <br/></p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>start</tt> : <em>64-bit Integer,Double precision floating point</em>
+<ul>
+<li>number at beginning of range</li>
+</ul>
+</li>
+<li>
+<tt>stop</tt> : <em>64-bit Integer,Double precision floating point</em>
+<ul>
+<li>number at end of range</li>
+</ul>
+</li>
+<li>
+<tt>num</tt> : <em>64-bit Integer</em>
+<ul>
+<li>count of range</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Double precision floating point list</em>
+<ul>
+<li>Evenly spaced list of count num, spanning [start,stop] (not including stop)</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_linspaceWithY"><tt>.maths.linspaceWithY[start;stop;num]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>start</tt> : <em>64-bit Integer,Double precision floating point</em>
+<ul>
+<li>number at beginning of range</li>
+</ul>
+</li>
+<li>
+<tt>stop</tt> : <em>64-bit Integer,Double precision floating point</em>
+<ul>
+<li>number at end of range</li>
+</ul>
+</li>
+<li>
+<tt>num</tt> : <em>64-bit Integer</em>
+<ul>
+<li>count of range</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Double precision floating point list</em>
+<ul>
+<li>Evenly spaced list of count num, spanning [start,stop] (including stop)</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_getDiscriminant"><tt>.maths.getDiscriminant[a;b;c]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the discriminant of ax^2 + bx + c</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>a</tt> : <em>Double precision floating point</em>
+<ul>
+<li>coefficient of x^2</li>
+</ul>
+</li>
+<li>
+<tt>b</tt> : <em>Double precision floating point</em>
+<ul>
+<li>coefficient of x</li>
+</ul>
+</li>
+<li>
+<tt>c</tt> : <em>Double precision floating point</em>
+<ul>
+<li>constant of the quadratic</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Double precision floating point</em>
+<ul>
+<li>The discrimant of the quadratic</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_solveQuadratic"><tt>.maths.solveQuadratic[a;b;c]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the solutions to ax^2 + bx + c = 0 (returns nulls for complex roots)</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>a</tt> : <em>Double precision floating point</em>
+<ul>
+<li>coefficient of x^2</li>
+</ul>
+</li>
+<li>
+<tt>b</tt> : <em>Double precision floating point</em>
+<ul>
+<li>coefficient of x</li>
+</ul>
+</li>
+<li>
+<tt>c</tt> : <em>Double precision floating point</em>
+<ul>
+<li>constant of the quadratic</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Double precision floating point list</em>
+<ul>
+<li>Returns roots of the quadratic</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_maths_getDiscriminant"><tt>.maths.getDiscriminant</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_getListMode"><tt>.maths.getListMode[lst]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the mode of a list</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>lst</tt> : <em>Any list type</em>
+<ul>
+<li>list of numbers</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Any list type</em>
+<ul>
+<li>Mode of the list</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_truncate"><tt>.maths.truncate[decplaces;num]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Truncate (round towards 0) num to decplaces decimal places</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>decplaces</tt> : <em>64-bit Integer</em>
+<ul>
+<li>number of decimals</li>
+</ul>
+</li>
+<li>
+<tt>num</tt> : <em>Double precision floating point</em>
+<ul>
+<li>number to be truncated</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Double precision floating point</em>
+<ul>
+<li>Truncated float</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_factorial"><tt>.maths.factorial[num]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the factorial of a non-negative integer, num</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>num</tt> : <em>64-bit Integer</em>
+<ul>
+<li>number</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>64-bit Integer</em>
+<ul>
+<li>Returns the factorial of the number</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_nthPrime"><tt>.maths.nthPrime[num]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the num-th prime number</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>num</tt> : <em>64-bit Integer</em>
+<ul>
+<li>number</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>64-bit Integer</em>
+<ul>
+<li>The num th prime number</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_maths_getXPrimes"><tt>.maths.getXPrimes</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_getXPrimes"><tt>.maths.getXPrimes[num]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return the first num prime numbers</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>num</tt> : <em>64-bit Integer</em>
+<ul>
+<li>number</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>64-bit Integer list</em>
+<ul>
+<li>List of first num prime numbers</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_listPrimes"><tt>.maths.listPrimes[num]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return all prime numbers less than num</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>num</tt> : <em>64-bit Integer</em>
+<ul>
+<li>number</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>64-bit Integer list</em>
+<ul>
+<li>All prime numbers less than num</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_maths_createPandasDF"><tt>.maths.createPandasDF[r;c;df]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Replicate pandas.DataFrame to a limited degree</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>r</tt> : <em>Symbol list</em>
+<ul>
+<li>list of rows</li>
+</ul>
+</li>
+<li>
+<tt>c</tt> : <em>Symbol list</em>
+<ul>
+<li>ist of cols</li>
+</ul>
+</li>
+<li>
+<tt>df</tt> : <em>Table,Symbol</em>
+<ul>
+<li>pivot table or ` (to return empty pivot table)</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Pivot of dimensions r and c</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div></div><div class="row"> <div class="section-title" id="5"><h2>misc</h2></div><div class="col-md-9 col-lg-9" id="q-doc-parsed-content5">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_misc_makeDictGenType"><tt>.misc.makeDictGenType[dict]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>create generically-typed version of a given dictionary</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>dict</tt> : <em>Dictionary</em>
+<ul>
+<li>Dictionary</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Dictionary</em>
+<ul>
+<li>Dictionary of non specified type</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_misc_indexListColumns"><tt>.misc.indexListColumns[columns;booleans]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Index into list columns of a table</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>columns</tt> : <em>Symbol list</em>
+<ul>
+<li>Columns</li>
+</ul>
+</li>
+<li>
+<tt>booleans</tt> : <em>Boolean list</em>
+<ul>
+<li>Nested Boolean lists</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Symbol list</em>
+<ul>
+<li>Columns</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_misc_getSymCount"><tt>.misc.getSymCount[sym]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Get count of sym file</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>sym</tt> : <em>Symbol</em>
+<ul>
+<li>Path to sym file</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>32-bit Integer</em>
+<ul>
+<li>Count of sym file</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div></div><div class="row"> <div class="section-title" id="6"><h2>table</h2></div><div class="col-md-9 col-lg-9" id="q-doc-parsed-content6">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_resolve"><tt>.tbl.resolve[tblOrSym]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return resolved table if a reference to a table is passed</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tblOrSym</tt> : <em>Table,Symbol</em>
+<ul>
+<li>Table or reference to a table to resolve</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Resolved table</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_denum"><tt>.tbl.denum[tblOrSym]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Denumerate table or reference to a table</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tblOrSym</tt> : <em>Table,Symbol</em>
+<ul>
+<li>Table or reference to a table to resolve</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Denumerated table</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_tbl_resolve"><tt>.tbl.resolve</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_createPivot"><tt>.tbl.createPivot[tbl;g;c;v]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Create a pivot table dynamically</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tbl</tt> : <em>Table</em>
+<ul>
+<li>table</li>
+</ul>
+</li>
+<li>
+<tt>g</tt> : <em>Symbol</em>
+<ul>
+<li>column to group by</li>
+</ul>
+</li>
+<li>
+<tt>c</tt> : <em>Symbol</em>
+<ul>
+<li>column to become the key of pivot table</li>
+</ul>
+</li>
+<li>
+<tt>v</tt> : <em>Symbol</em>
+<ul>
+<li>column which becomes the values in the pivot table</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Pivot table</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_createMultiPivot"><tt>.tbl.createMultiPivot[tbl;g;c;vl]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Multi pivot for x columns</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tbl</tt> : <em>Table</em>
+<ul>
+<li>table</li>
+</ul>
+</li>
+<li>
+<tt>g</tt> : <em>Symbol</em>
+<ul>
+<li>column to group by</li>
+</ul>
+</li>
+<li>
+<tt>c</tt> : <em>Symbol</em>
+<ul>
+<li>column to become the key of pivot table</li>
+</ul>
+</li>
+<li>
+<tt>vl</tt> : <em>Symbol list</em>
+<ul>
+<li>column(s) which becomes the values in the pivot table</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Pivot table</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_tbl_createPivot"><tt>.tbl.createPivot</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_convertFromPivot"><tt>.tbl.convertFromPivot[tbl;g;c;v]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Convert from a pivot table to a normal kdb table</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tbl</tt> : <em>Table</em>
+<ul>
+<li>Pivot table</li>
+</ul>
+</li>
+<li>
+<tt>g</tt> : <em>Symbol</em>
+<ul>
+<li>column which is grouped</li>
+</ul>
+</li>
+<li>
+<tt>c</tt> : <em>Symbol</em>
+<ul>
+<li>column which is the key of the pivot table</li>
+</ul>
+</li>
+<li>
+<tt>v</tt> : <em>Symbol</em>
+<ul>
+<li>column which becomes the values in the pivot table</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Normal table</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_link"><tt>.tbl.link[tbl;lnkTbl]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Create link(s) between a table of data and x other tables</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tbl</tt> : <em>Table</em>
+<ul>
+<li>Table of data to add links</li>
+</ul>
+</li>
+<li>
+<tt>lnkTbl</tt> : <em>Symbol list</em>
+<ul>
+<li>Global table names which will be linked to the data</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>The first table input with the links added from the global tables</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_relink"><tt>.tbl.relink[tbl;gt;lt]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Relink data to a table which has a link and the static(ish) table has been updated</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tbl</tt> : <em>Table</em>
+<ul>
+<li>the update of the link reference table</li>
+</ul>
+</li>
+<li>
+<tt>gt</tt> : <em>Symbol</em>
+<ul>
+<li>Global table</li>
+</ul>
+</li>
+<li>
+<tt>lt</tt> : <em>Symbol</em>
+<ul>
+<li>Linked table</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Symbol</em>
+<ul>
+<li>Name of updated table.</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_tbl_link"><tt>.tbl.link</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_isLinked"><tt>.tbl.isLinked[tblName]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Check which tables are linked to the input</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tblName</tt> : <em>Symbol</em>
+<ul>
+<li>table name</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Symbol list</em>
+<ul>
+<li>List of tables that have the input linked to them</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_fixSplayCnt"><tt>.tbl.fixSplayCnt[dir]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Resave the splay table with all columns truncated to the length of the shortest one <br/> In the event of columns of a splay having different lengths <br/></p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>dir</tt> : <em>Symbol</em>
+<ul>
+<li>Directory where splay table is stored</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_loadCsvWithStrings"><tt>.tbl.loadCsvWithStrings[file]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Output csv as a table of strings without the need for the number of columns to be known</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>file</tt> : <em>Symbol</em>
+<ul>
+<li>filename</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Table of strings from input csv</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_loadCsvWithSchema"><tt>.tbl.loadCsvWithSchema[file;tbl]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Output csv as a table conforming to a given table's column-types</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>file</tt> : <em>Symbol</em>
+<ul>
+<li>csv file</li>
+</ul>
+</li>
+<li>
+<tt>tbl</tt> : <em>Table,Symbol</em>
+<ul>
+<li>raw table or table name as a symbol</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Table with data from csv and column types from tbl</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_isKeyed"><tt>.tbl.isKeyed[tbl]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Check if a table is keyed or not</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tbl</tt> : <em>Table,Symbol</em>
+<ul>
+<li>table or table name</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Boolean</em>
+<ul>
+<li>True/false depending on if table is keyed/unkeyed</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_comparison"><tt>.tbl.comparison[f;tbl1;tbl2]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Run a comparison between 2 tables for the columns in those tables <br/>If the table is keyed will only consider the keyed columns <br/></p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>f</tt> : <em>Function</em>
+<ul>
+<li>function to do comparison, example inter, except, etc</li>
+</ul>
+</li>
+<li>
+<tt>tbl1</tt> : <em>Table</em>
+<ul>
+<li>table</li>
+</ul>
+</li>
+<li>
+<tt>tbl2</tt> : <em>Table</em>
+<ul>
+<li>table</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Subset of data depending on the function</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_tbl_isKeyed"><tt>.tbl.isKeyed</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_compExcept"><tt>.tbl.compExcept[...]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Projection of comparison for just except</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tbl1</tt> : <em>Table</em>
+<ul>
+<li>table</li>
+</ul>
+</li>
+<li>
+<tt>tbl2</tt> : <em>Table</em>
+<ul>
+<li>table</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Subset of data after applying except</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_tbl_comparison"><tt>.tbl.comparison</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_compInter"><tt>.tbl.compInter[...]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Projection of comparison for just inter</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tbl1</tt> : <em>Table</em>
+<ul>
+<li>table</li>
+</ul>
+</li>
+<li>
+<tt>tbl2</tt> : <em>Table</em>
+<ul>
+<li>table</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Subset of data after applying inter</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_tbl_comparison"><tt>.tbl.comparison</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_tabCompare"><tt>.tbl.tabCompare[tbl1;tbl2;check]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Compare 2 tables for a specific check</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tbl1</tt> : <em>Table</em>
+<ul>
+<li>table</li>
+</ul>
+</li>
+<li>
+<tt>tbl2</tt> : <em>Table</em>
+<ul>
+<li>table</li>
+</ul>
+</li>
+<li>
+<tt>check</tt> : <em>Symbol</em>
+<ul>
+<li>3 types of checks `identical/`count/`subset</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Boolean</em>
+<ul>
+<li>True/false depending on if check is passed/failed</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_renameColumns"><tt>.tbl.renameColumns[dict;tbl]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Rename columns in a table using a map (for pre3.6 versions of kdb+)</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>dict</tt> : <em>Dictionary</em>
+<ul>
+<li>dictionary to rename cols</li>
+</ul>
+</li>
+<li>
+<tt>tbl</tt> : <em>Table</em>
+<ul>
+<li>table</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Table with renamed columns specified in the dictionary</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_optimalUnionOver"><tt>.tbl.optimalUnionOver[tbls]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Efficiently union join over a given list of tables</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tbls</tt> : <em>Any list type</em>
+<ul>
+<li>list of tables to union join together</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Result of appling union join over tbls input</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_createIntPart"><tt>.tbl.createIntPart[path;partName;tblName;tbl]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Create an integer partition database to store a table on disk</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>path</tt> : <em>String</em>
+<ul>
+<li>directory path</li>
+</ul>
+</li>
+<li>
+<tt>partName</tt> : <em>Symbol</em>
+<ul>
+<li>partition name</li>
+</ul>
+</li>
+<li>
+<tt>tblName</tt> : <em>Symbol</em>
+<ul>
+<li>table name</li>
+</ul>
+</li>
+<li>
+<tt>tbl</tt> : <em>Table</em>
+<ul>
+<li>table to save to disk</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_saveDataToIntPart"><tt>.tbl.saveDataToIntPart[path;partName;tblName;tbl]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Save or updates a table to an integer partition database. <br/>Note you need to have a reference on intMap in memory otherwise will default to .tbl.createIntPart<br/></p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>path</tt> : <em>String</em>
+<ul>
+<li>directory path</li>
+</ul>
+</li>
+<li>
+<tt>partName</tt> : <em>Symbol</em>
+<ul>
+<li>partition name</li>
+</ul>
+</li>
+<li>
+<tt>tblName</tt> : <em>Symbol</em>
+<ul>
+<li>table name</li>
+</ul>
+</li>
+<li>
+<tt>tbl</tt> : <em>Table</em>
+<ul>
+<li>table to save to disk</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_tbl_createIntPart"><tt>.tbl.createIntPart</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_ungroupBy"><tt>.tbl.ungroupBy[tbl;columns]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Selectively ungroup a table by a subset of columns</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>tbl</tt> : <em>Table</em>
+<ul>
+<li>Unkeyed table to ungroup</li>
+</ul>
+</li>
+<li>
+<tt>columns</tt> : <em>Symbol list</em>
+<ul>
+<li>Column(s) to ungroup by</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Ungrouped table</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_getFileSizeOnDisk"><tt>.tbl.getFileSizeOnDisk[filePath]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return size of file in bytes</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>filePath</tt> : <em>Symbol</em>
+<ul>
+<li> path to the file we want to know the size of</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>64-bit Integer</em>
+<ul>
+<li>Size of files on disk in bytes</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_getTopLevelDBContents"><tt>.tbl.getTopLevelDBContents[hdbDir]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Return top-level contents of a HDB with references in par.txt resolved</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>hdbDir</tt> : <em>Symbol</em>
+<ul>
+<li> path to segmented or partitioned db</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Symbol</em>
+<ul>
+<li>List) path of each partition in the db</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_getOnDiskContents"><tt>.tbl.getOnDiskContents[dir;tblName]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Given a directory and a table name in that directory, return as a list <br/> the paths to the individual columns of a table if splayed or <br/> the path to the table if it is a flat file</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>dir</tt> : <em>Symbol</em>
+<ul>
+<li>directory path</li>
+</ul>
+</li>
+<li>
+<tt>tblName</tt> : <em>Symbol</em>
+<ul>
+<li>table in dir that we want to expand the contents of</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Symbol list</em>
+<ul>
+<li>One of path to the table (if a flat file), paths to table columns (if splayed), empty list if no match found for tbl name</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_getTableSizeOnDisk"><tt>.tbl.getTableSizeOnDisk[hdbDir;tblName]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Get the size of tables on disk</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>path</tt> : <em>Symbol</em>
+<ul>
+<li>path to hdb</li>
+</ul>
+</li>
+<li>
+<tt>tblName</tt> : <em>Symbol</em>
+<ul>
+<li>table name</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Size of table under each partition</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_tbl_getFileSizeOnDisk"><tt>.tbl.getFileSizeOnDisk</tt></a>
+</li>
+<li>
+<a href="#_tbl_getTopLevelDBContents"><tt>.tbl.getTopLevelDBContents</tt></a>
+</li>
+<li>
+<a href="#_tbl_getOnDiskContents"><tt>.tbl.getOnDiskContents</tt></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><a name="_tbl_getTotalDBSizeOnDiskByFile"><tt>.tbl.getTotalDBSizeOnDiskByFile[hdbDir]</tt></a></h3>
+</div>
+<div class="panel-body">
+<p>Get a breakdown of the total DB size on a per-file basis</p>
+<p>
+<strong>Parameters:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<tt>path</tt> : <em>Symbol</em>
+<ul>
+<li>path to hdb</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>Returns:</strong>
+</p>
+<ul style="list-style-type: none">
+<li>
+<em>Table</em>
+<ul>
+<li>Size of each entity below the given directory</li>
+</ul>
+</li>
+</ul>
+<p>
+<strong>See Also:</strong>
+</p>
+<ul>
+<li>
+<a href="#_tbl_getFileSizeOnDisk"><tt>.tbl.getFileSizeOnDisk</tt></a>
+</li>
+<li>
+<a href="#_tbl_getTopLevelDBContents"><tt>.tbl.getTopLevelDBContents</tt></a>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+<div class="footer">
+<div class="container">
+<p class="text-muted">q-doc Code Documentation Generator</p>
+</div>
+</div>
+</body></html>
